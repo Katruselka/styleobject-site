@@ -1,0 +1,76 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://styleobject-site.netlify.app
+display_url: https://styleobject-site.netlify.app
+
+collections:
+  - name: "looks"
+    label: "Looks"
+    label_singular: "Look"
+    folder: "looks/data"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    summary: "{{title}} · {{category}}"
+    sortable_fields: ['date', 'title']
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Например: Linen Dress That Looks Expensive"}
+      - {label: "Slug (URL)", name: "slug", widget: "string", hint: "URL: linen-maxi-dress (только латиница и дефисы)"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Published", name: "published", widget: "boolean", default: false, hint: "Включите когда готово к публикации"}
+      
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Summer Essentials", value: "summer-essentials" }
+          - { label: "Quiet Mornings", value: "quiet-mornings" }
+          - { label: "Golden Hour", value: "golden-hour" }
+          - { label: "The Weekend", value: "the-weekend" }
+          - { label: "Coastal Edit", value: "coastal-edit" }
+          - { label: "Evening Soft", value: "evening-soft" }
+          - { label: "Office Quiet", value: "office-quiet" }
+          - { label: "The Edit", value: "the-edit" }
+      
+      - label: "Season"
+        name: "season"
+        widget: "select"
+        options:
+          - { label: "Summer 2026", value: "summer-2026" }
+          - { label: "Spring 2026", value: "spring-2026" }
+          - { label: "Fall 2026", value: "fall-2026" }
+        default: "summer-2026"
+      
+      - {label: "Hero Image", name: "hero_image", widget: "image", hint: "Главное изображение, рекомендуется 1080×1350"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", hint: "Например: quiet luxury · summer 2026"}
+      - {label: "Story", name: "story", widget: "text", hint: "Описание образа — 2-3 предложения"}
+      
+      - label: "Products"
+        name: "products"
+        widget: "list"
+        summary: "{{fields.name}} · ${{fields.price}}"
+        fields:
+          - {label: "Product Name", name: "name", widget: "string"}
+          - {label: "Category Label", name: "category_label", widget: "string", hint: "Например: The Sandals"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Price", name: "price", widget: "number", value_type: "int"}
+          - {label: "Product Image", name: "image", widget: "image"}
+          - {label: "Amazon Affiliate Link", name: "amazon_link", widget: "string", hint: "Ваша affiliate ссылка amzn.to/..."}
+      
+      - label: "Styling Tips"
+        name: "styling_tips"
+        widget: "list"
+        max: 3
+        min: 3
+        fields:
+          - {label: "Tip Label", name: "label", widget: "string"}
+          - {label: "Tip Text", name: "text", widget: "text"}
+      
+      - {label: "Meta Description", name: "meta_description", widget: "text", hint: "До 160 символов"}
+      - {label: "Keywords", name: "keywords", widget: "string", hint: "Через запятую"}

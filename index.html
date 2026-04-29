@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STYLE OBJECT — The Art of Quiet Dressing</title>
+  <meta name="description" content="Curated quiet luxury outfit edits with affordable Amazon finds. Linen dresses, woven sandals, structured bags. Summer 2026.">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #faf6ee;
+      color: #2a2420;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+    
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    /* HEADER */
+    .header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(42,36,32,0.1);
+      background: #faf6ee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: #2a2420;
+      text-decoration: none;
+    }
+    .nav { display: flex; gap: 28px; }
+    .nav a {
+      color: #5c4a3a;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav a:hover { color: #2a2420; }
+    
+    /* HERO */
+    .hero {
+      padding: 100px 24px 80px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-issue {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #8a7464;
+      margin-bottom: 32px;
+    }
+    .hero-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(48px, 8vw, 92px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 32px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: #5c4a3a;
+    }
+    .hero-text {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 19px;
+      color: #5c4a3a;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* SECTION TITLE */
+    .section-title {
+      text-align: center;
+      padding-bottom: 48px;
+    }
+    .section-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #8a7464;
+      margin-bottom: 12px;
+    }
+    .section-heading {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+    .section-heading em { font-style: italic; color: #5c4a3a; }
+    
+    /* THE EDIT — Latest Looks */
+    .edit-section {
+      padding: 60px 0 80px;
+      border-top: 1px solid rgba(42,36,32,0.1);
+    }
+    .looks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .look-card {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .look-card:hover { transform: translateY(-4px); }
+    .look-card-image {
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      background: #f5f0e8;
+    }
+    .look-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s;
+    }
+    .look-card:hover img { transform: scale(1.05); }
+    .look-card-category {
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #8a7464;
+      margin-bottom: 8px;
+    }
+    .look-card-title {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    .look-card-title em { font-style: italic; color: #5c4a3a; }
+    .look-card-subtitle {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #5c4a3a;
+    }
+    
+    .view-all {
+      text-align: center;
+      margin-top: 48px;
+    }
+    .view-all a {
+      display: inline-block;
+      padding: 14px 36px;
+      border: 1px solid #2a2420;
+      color: #2a2420;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .view-all a:hover {
+      background: #2a2420;
+      color: #faf6ee;
+    }
+    
+    /* CATEGORIES — Browse by mood */
+    .categories-section {
+      padding: 80px 0;
+      background: #f5f0e8;
+    }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .category-card {
+      aspect-ratio: 3/4;
+      background: #faf6ee;
+      border: 1px solid rgba(42,36,32,0.15);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      text-decoration: none;
+      color: #2a2420;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .category-card:hover {
+      background: #2a2420;
+      color: #faf6ee;
+    }
+    .category-card-content {
+      position: relative;
+      z-index: 2;
+    }
+    .category-name {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .category-count {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8a7464;
+    }
+    .category-card:hover .category-count { color: rgba(250,246,238,0.7); }
+    
+    /* ABOUT */
+    .about-section {
+      padding: 100px 24px;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .about-text {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      line-height: 1.6;
+      color: #3a312a;
+      font-weight: 300;
+      margin-bottom: 32px;
+    }
+    .about-text em { font-style: italic; color: #5c4a3a; }
+    .about-signature {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 16px;
+      color: #5c4a3a;
+    }
+    
+    /* DISCLOSURE */
+    .disclosure {
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #8a7464;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(42,36,32,0.1);
+    }
+    
+    /* FOOTER */
+    .footer {
+      padding: 48px 0 32px;
+      text-align: center;
+      background: #2a2420;
+      color: #faf6ee;
+    }
+    .footer-logo {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: #faf6ee;
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .footer-links a:hover { opacity: 1; }
+    .footer-copy {
+      font-size: 11px;
+      color: #8a7464;
+      letter-spacing: 1px;
+    }
+    
+    /* LOADING */
+    .loading {
+      text-align: center;
+      padding: 80px 24px;
+      color: #5c4a3a;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 16px;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 80px 24px;
+      color: #8a7464;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+    }
+    
+    @media (max-width: 768px) {
+      .hero { padding: 60px 24px 48px; }
+      .nav { gap: 16px; }
+      .nav a { font-size: 11px; letter-spacing: 1px; }
+      .logo { font-size: 18px; letter-spacing: 3px; }
+      .categories-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-section { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">STYLE · OBJECT</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/looks/">All Looks</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-issue">Issue 01 · Summer 2026</div>
+    <h1 class="hero-title">The art of <em>quiet</em> dressing.</h1>
+    <p class="hero-text">
+      Curated edits where elevated taste meets accessible price. 
+      Linen, silk, leather, raffia — the language of effortless summer.
+    </p>
+  </section>
+  
+  <!-- THE EDIT — Latest Looks -->
+  <section class="edit-section">
+    <div class="container">
+      <div class="section-title">
+        <div class="section-eyebrow">The Edit</div>
+        <h2 class="section-heading">Latest <em>Looks</em></h2>
+      </div>
+      
+      <div id="loading-edit" class="loading">Loading the edit...</div>
+      <div id="empty-edit" class="empty-state" style="display:none;">
+        New looks coming soon.
+      </div>
+      <div id="latest-looks" class="looks-grid"></div>
+      
+      <div class="view-all" id="view-all" style="display:none;">
+        <a href="/looks/">View all looks →</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CATEGORIES — Browse by mood -->
+  <section class="categories-section" id="categories-section" style="display:none;">
+    <div class="container">
+      <div class="section-title">
+        <div class="section-eyebrow">Browse by mood</div>
+        <h2 class="section-heading">Find your <em>edit</em></h2>
+      </div>
+      
+      <div id="categories-grid" class="categories-grid"></div>
+    </div>
+  </section>
+  
+  <!-- ABOUT -->
+  <section class="about-section">
+    <p class="about-text">
+      <em>STYLE OBJECT</em> is a curated lookbook of quiet luxury 
+      outfits — where elevated aesthetics meet affordable Amazon finds. 
+      For the woman who values taste over labels.
+    </p>
+    <p class="about-signature">— Curated weekly</p>
+  </section>
+  
+  <!-- DISCLOSURE -->
+  <p class="disclosure">
+    As an Amazon Associate, I earn from qualifying purchases. 
+    This means I may receive a small commission at no extra cost to you.
+  </p>
+  
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">STYLE · OBJECT</div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/looks/">All Looks</a>
+  </div>
+  <div class="footer-copy">© 2026 STYLE OBJECT</div>
+</footer>
+
+<script>
+// Маппинг категорий
+const CATEGORY_LABELS = {
+  'summer-essentials': 'Summer Essentials',
+  'quiet-mornings': 'Quiet Mornings',
+  'golden-hour': 'Golden Hour',
+  'the-weekend': 'The Weekend',
+  'coastal-edit': 'Coastal Edit',
+  'evening-soft': 'Evening Soft',
+  'office-quiet': 'Office Quiet',
+  'the-edit': 'The Edit'
+};
+
+// GitHub repo path для загрузки данных
+const GITHUB_API = 'https://api.github.com/repos/Katruselka/styleobject-site/contents/looks/data';
+
+async function loadHomepage() {
+  try {
+    const response = await fetch(GITHUB_API);
+    const files = await response.json();
+    
+    if (!Array.isArray(files) || files.length === 0) {
+      showEmpty();
+      return;
+    }
+    
+    // Загружаем все JSON
+    const looks = await Promise.all(
+      files
+        .filter(f => f.name.endsWith('.json'))
+        .map(f => fetch(f.download_url).then(r => r.json()).catch(() => null))
+    );
+    
+    // Только опубликованные, сортируем по дате
+    const published = looks
+      .filter(l => l && l.published)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    if (published.length === 0) {
+      showEmpty();
+      return;
+    }
+    
+    renderLatestLooks(published);
+    renderCategories(published);
+  } catch (e) {
+    console.error(e);
+    showEmpty();
+  }
+}
+
+function renderLatestLooks(looks) {
+  // Берём первые 6 (или меньше)
+  const latest = looks.slice(0, 6);
+  
+  const html = latest.map(l => {
+    const titleParts = l.title.split(' ');
+    const lastWord = titleParts.pop();
+    const titleHtml = titleParts.length > 0 
+      ? titleParts.join(' ') + ' <em>' + lastWord + '</em>'
+      : '<em>' + lastWord + '</em>';
+    
+    return `
+      <a href="/looks/${l.slug}" class="look-card">
+        <div class="look-card-image">
+          <img src="${l.hero_image}" alt="${l.title}" loading="lazy">
+        </div>
+        <div class="look-card-category">${CATEGORY_LABELS[l.category] || l.category}</div>
+        <h3 class="look-card-title">${titleHtml}</h3>
+        <p class="look-card-subtitle">${l.subtitle || ''}</p>
+      </a>
+    `;
+  }).join('');
+  
+  document.getElementById('latest-looks').innerHTML = html;
+  document.getElementById('loading-edit').style.display = 'none';
+  
+  // Показать "View all" если есть больше 3 looks
+  if (looks.length > 3) {
+    document.getElementById('view-all').style.display = 'block';
+  }
+}
+
+function renderCategories(looks) {
+  // Группируем по категориям
+  const counts = {};
+  looks.forEach(l => {
+    counts[l.category] = (counts[l.category] || 0) + 1;
+  });
+  
+  // Только категории с looks
+  const categoriesWithLooks = Object.keys(counts);
+  
+  if (categoriesWithLooks.length === 0) return;
+  
+  const html = categoriesWithLooks.map(cat => {
+    const label = CATEGORY_LABELS[cat] || cat;
+    const count = counts[cat];
+    const looksWord = count === 1 ? 'look' : 'looks';
+    
+    return `
+      <a href="/looks/?category=${cat}" class="category-card">
+        <div class="category-card-content">
+          <div class="category-name">${label}</div>
+          <div class="category-count">${count} ${looksWord}</div>
+        </div>
+      </a>
+    `;
+  }).join('');
+  
+  document.getElementById('categories-grid').innerHTML = html;
+  document.getElementById('categories-section').style.display = 'block';
+}
+
+function showEmpty() {
+  document.getElementById('loading-edit').style.display = 'none';
+  document.getElementById('empty-edit').style.display = 'block';
+}
+
+loadHomepage();
+</script>
+
+</body>
+</html>

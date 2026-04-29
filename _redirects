@@ -1,0 +1,6 @@
+# Pretty URLs for Look pages
+# /looks/linen-maxi-dress → /looks/look.html?slug=linen-maxi-dress
+/looks/data/*  /looks/data/:splat  200
+/looks/index.html  /looks/  200
+/looks/look.html  /looks/look.html  200
+/looks/*  /looks/look.html  200

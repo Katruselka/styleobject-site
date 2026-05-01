@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Linen Dress That Feels Expensive — STYLE OBJECT</title>
-  <meta name="description" content="Linen maxi dress with contrast black spaghetti straps and open tie-back. Quiet luxury summer essential under $40 on Amazon — elevates any summer look effortlessly.">
+  <meta name="description" content="Linen maxi dress with contrast black spaghetti straps and open tie-back. Quiet luxury summer essential under $40 on Amazon.">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHWC41ZE4V"></script>
@@ -19,43 +19,42 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; background: #faf6ee; color: #2a2420; line-height: 1.6; font-weight: 300; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
     .header { padding: 20px 0; border-bottom: 1px solid rgba(42,36,32,0.1); background: #faf6ee; position: sticky; top: 0; z-index: 100; }
     .header-inner { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-family: 'Fraunces', serif; font-size: 21px; font-weight: 400; letter-spacing: 4px; color: #2a2420; text-decoration: none; }
     .nav { display: flex; gap: 0; }
-    .nav a { color: #5c4a3a; text-decoration: none; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; transition: color 0.2s; padding: 6px 14px; border-radius: 2px; }
+    .nav a { color: #5c4a3a; text-decoration: none; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; transition: color 0.2s; padding: 6px 12px; border-radius: 2px; }
     .nav a:hover { color: #2a2420; }
     .nav a.active { color: #2a2420; background: rgba(42,36,32,0.07); }
-
     .footer { padding: 48px 0 32px; text-align: center; background: #2a2420; color: #faf6ee; }
     .footer-logo { font-family: 'Fraunces', serif; font-size: 22px; letter-spacing: 4px; margin-bottom: 16px; }
-    .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
     .footer-links a { color: #faf6ee; text-decoration: none; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.7; transition: opacity 0.2s; }
     .footer-links a:hover { opacity: 1; }
     .footer-copy { font-size: 11px; color: #8a7464; letter-spacing: 1px; }
     .disclosure { padding: 28px 24px; text-align: center; font-size: 12px; color: #8a7464; font-style: italic; border-top: 1px solid rgba(42,36,32,0.1); }
-
     @media (max-width: 768px) {
-      .nav a { font-size: 10px; padding: 5px 10px; letter-spacing: 1px; }
+      .nav a { font-size: 10px; padding: 5px 8px; letter-spacing: 0.5px; }
       .logo { font-size: 17px; letter-spacing: 3px; }
     }
+    @media (max-width: 480px) {
+      .nav { flex-wrap: wrap; justify-content: flex-end; gap: 2px; }
+      .nav a { font-size: 9px; padding: 4px 7px; }
+    }
 
-    .breadcrumb { padding: 20px 0 0; font-size: 12px; color: #8a7464; letter-spacing: 1px; }
+    .breadcrumb { padding: 20px 0 0; font-size: 12px; color: #8a7464; }
     .breadcrumb a { color: #8a7464; text-decoration: none; }
     .breadcrumb a:hover { color: #2a2420; }
     .breadcrumb span { margin: 0 8px; opacity: 0.5; }
-
     .look-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding: 48px 0 80px; align-items: start; }
     .hero-image-wrap { aspect-ratio: 4/5; overflow: hidden; border-radius: 4px; background: #f5f0e8; position: sticky; top: 88px; }
     .hero-image-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .hero-content { padding-top: 8px; }
     .hero-category { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #8a7464; margin-bottom: 20px; }
-    .hero-title { font-family: 'Fraunces', serif; font-size: clamp(28px, 4vw, 50px); font-weight: 400; line-height: 1.1; letter-spacing: -1px; margin-bottom: 16px; }
+    .hero-title { font-family: 'Fraunces', serif; font-size: clamp(26px, 3.5vw, 48px); font-weight: 400; line-height: 1.1; letter-spacing: -1px; margin-bottom: 16px; }
     .hero-title em { font-style: italic; color: #5c4a3a; }
     .hero-subtitle { font-family: 'Fraunces', serif; font-style: italic; font-size: 15px; color: #5c4a3a; margin-bottom: 28px; }
     .hero-story { font-size: 15px; line-height: 1.85; color: #3a312a; margin-bottom: 36px; }
-
     .product-card { border: 1px solid rgba(42,36,32,0.15); border-radius: 4px; overflow: hidden; }
     .product-image { aspect-ratio: 4/3; overflow: hidden; background: #f5f0e8; }
     .product-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -68,7 +67,6 @@
     .price-sale { color: #2a2420; }
     .amazon-btn { display: block; padding: 15px 24px; background: #2a2420; color: #faf6ee; text-decoration: none; text-align: center; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; transition: background 0.2s; border-radius: 2px; }
     .amazon-btn:hover { background: #5c4a3a; }
-
     .tips-section { padding: 72px 0; border-top: 1px solid rgba(42,36,32,0.1); }
     .section-eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #8a7464; margin-bottom: 10px; }
     .section-heading { font-family: 'Fraunces', serif; font-size: clamp(26px, 4vw, 38px); font-weight: 400; letter-spacing: -0.5px; margin-bottom: 40px; }
@@ -77,10 +75,8 @@
     .tip-card { padding: 28px; background: #f5f0e8; border-radius: 4px; }
     .tip-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #8a7464; margin-bottom: 10px; }
     .tip-text { font-size: 14px; line-height: 1.75; color: #3a312a; }
-
     .more-section { padding: 72px 0; background: #f5f0e8; }
-    .more-section .section-eyebrow { text-align: center; }
-    .more-section .section-heading { text-align: center; }
+    .more-section .section-eyebrow, .more-section .section-heading { text-align: center; }
     .more-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; max-width: 800px; margin: 0 auto; }
     .more-card { text-decoration: none; color: inherit; display: block; transition: transform 0.3s; }
     .more-card:hover { transform: translateY(-4px); }
@@ -89,7 +85,6 @@
     .more-card:hover img { transform: scale(1.05); }
     .more-card-title { font-family: 'Fraunces', serif; font-size: 16px; font-weight: 400; line-height: 1.3; }
     .more-card-title em { font-style: italic; color: #5c4a3a; }
-
     @media (max-width: 768px) {
       .look-hero { grid-template-columns: 1fr; gap: 28px; padding: 32px 0 60px; }
       .hero-image-wrap { position: static; aspect-ratio: 1/1; }
@@ -97,14 +92,12 @@
   </style>
 </head>
 <body>
-
 <header class="header">
   <div class="container header-inner">
     <a href="../../index.html" class="logo">STYLE · OBJECT</a>
-    <nav class="nav"><a href="../../looks/index.html" class="">All Looks</a><a href="../../looks/index.html?cat=bags" class="">Bags</a><a href="../../looks/index.html?cat=shoes" class="">Shoes</a><a href="../../looks/index.html?cat=dresses" class="active">Dresses</a></nav>
+    <nav class="nav"><a href="../../looks/index.html" class="">All</a><a href="../../looks/index.html?cat=bags" class="">Bags</a><a href="../../looks/index.html?cat=shoes" class="">Shoes</a><a href="../../looks/index.html?cat=dresses" class="active">Dresses</a><a href="../../looks/index.html?cat=accessories" class="">Accessories</a></nav>
   </div>
 </header>
-
 <main>
   <div class="container">
     <div class="breadcrumb">
@@ -112,7 +105,6 @@
       <a href="../index.html">All Looks</a><span>·</span>
       The Linen Dress That Feels Expensive
     </div>
-
     <div class="look-hero">
       <div class="hero-image-wrap">
         <img src="../../images/hero-linen-maxi-dress.jpg" alt="The Linen Dress That Feels Expensive">
@@ -121,7 +113,7 @@
         <div class="hero-category">Summer Essentials · Summer 2026</div>
         <h1 class="hero-title">The Linen Dress That Feels <em>Expensive</em></h1>
         <p class="hero-subtitle">the summer dress · summer 2026</p>
-        <p class="hero-story">Natural linen with a quietly brilliant detail — contrast black spaghetti straps and trim that turn a simple maxi into something editorial. Open tie-back, floor-grazing length, the kind of drape that looks effortless and expensive at once. The silhouette works for a slow Mediterranean lunch, a gallery opening, or golden hour on the terrace. Looks like it costs four times what it does.</p>
+        <p class="hero-story">Natural linen with a quietly brilliant detail — contrast black spaghetti straps and trim that turn a simple maxi into something editorial. Open tie-back, floor-grazing length, the kind of drape that looks effortless and expensive at once. The silhouette works for a slow Mediterranean lunch, a gallery opening, or golden hour on the terrace.</p>
         <div class="product-card">
           <div class="product-image">
             <img src="../../images/product-linen-maxi-dress.jpg" alt="Linen Maxi Dress with Contrast Spaghetti Straps">
@@ -137,7 +129,6 @@
       </div>
     </div>
   </div>
-
   <section class="tips-section">
     <div class="container">
       <div class="section-eyebrow">Styling Guide</div>
@@ -145,42 +136,39 @@
       <div class="tips-grid">
         <div class="tip-card">
           <div class="tip-label">On Fit</div>
-          <p class="tip-text">Size up if between sizes — linen has minimal stretch. The relaxed A-line silhouette means it flows beautifully even in a larger size. The tie-back lets you adjust fit at the waist for a more defined shape if you prefer.</p>
+          <p class="tip-text">Size up if between sizes — linen has minimal stretch. The relaxed A-line silhouette flows beautifully even in a larger size. The tie-back lets you adjust fit at the waist.</p>
         </div>
         <div class="tip-card">
           <div class="tip-label">Styling</div>
-          <p class="tip-text">The contrast black straps do the accessorizing for you — keep jewelry minimal. Gold small hoops, a delicate pendant necklace, and either the raffia flat sandals or woven Mary Janes complete the look. A straw tote or the taupe satchel for bags.</p>
+          <p class="tip-text">The contrast black straps do the accessorizing for you — keep jewelry minimal. Gold small hoops, a delicate pendant necklace, and either the raffia flat sandals or woven Mary Janes complete the look.</p>
         </div>
         <div class="tip-card">
           <div class="tip-label">Day to Night</div>
-          <p class="tip-text">Wear as-is with flat sandals for daytime and a straw hat. For evening, swap to the blue raffia platforms, add a light linen blazer in cream and a small clutch. The open back becomes the focal point under restaurant lighting — let it.</p>
+          <p class="tip-text">Wear with flat sandals and a straw hat for daytime. For evening, swap to the blue raffia platforms, add a light linen blazer in cream. The open back becomes the focal point under restaurant lighting — let it.</p>
         </div></div>
     </div>
   </section>
-
   <section class="more-section">
     <div class="container">
       <div class="section-eyebrow">Continue Browsing</div>
       <h2 class="section-heading">More <em>Looks</em></h2>
       <div class="more-grid">
-        <a href="../jw-pei-woven-tote/index.html" class="more-card">
+        <a href="../gold-diamond-ring/index.html" class="more-card">
           <div class="more-card-image">
-            <img src="../../images/hero-jw-pei-tote.jpg" alt="The Woven Bag That Looks Expensive" loading="lazy">
+            <img src="../../images/hero-gold-ring-alt.png" alt="The Ring That Looks Like an Heirloom" loading="lazy">
           </div>
-          <div class="more-card-title">The Woven Bag That Looks <em>Expensive</em></div>
+          <div class="more-card-title">The Ring That Looks Like an <em>Heirloom</em></div>
         </a>
-        <a href="../handmade-straw-tote/index.html" class="more-card">
+        <a href="../rectangle-sunglasses/index.html" class="more-card">
           <div class="more-card-image">
-            <img src="../../images/hero-straw-tote.jpg" alt="The Straw Tote Everyone Will Ask About" loading="lazy">
+            <img src="../../images/hero-sunglasses.png" alt="The Sunglasses That Make Every Outfit Look Intentional" loading="lazy">
           </div>
-          <div class="more-card-title">The Straw Tote Everyone Will Ask <em>About</em></div>
+          <div class="more-card-title">The Sunglasses That Make Every Outfit Look <em>Intentional</em></div>
         </a></div>
     </div>
   </section>
-
   <p class="disclosure">As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
 </main>
-
 <footer class="footer">
   <div class="footer-logo">STYLE · OBJECT</div>
   <div class="footer-links">
@@ -189,6 +177,7 @@
     <a href="../../looks/index.html?cat=bags">Bags</a>
     <a href="../../looks/index.html?cat=shoes">Shoes</a>
     <a href="../../looks/index.html?cat=dresses">Dresses</a>
+    <a href="../../looks/index.html?cat=accessories">Accessories</a>
   </div>
   <div class="footer-copy">© 2026 STYLE OBJECT</div>
 </footer>

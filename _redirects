@@ -1,6 +1,12 @@
-# Pretty URLs for Look pages
-# /looks/linen-maxi-dress → /looks/look.html?slug=linen-maxi-dress
-/looks/data/*  /looks/data/:splat  200
-/looks/index.html  /looks/  200
-/looks/look.html  /looks/look.html  200
-/looks/*  /looks/look.html  200
+# === Root redirects ===
+/looks/                  /looks/index.html          200
+/looks                   /looks/index.html          200
+
+# === Individual Look pages (Pretty URLs) ===
+/looks/:slug             /looks/look.html?slug=:slug 200
+
+# === Static assets (data, images и т.д.) ===
+/looks/data/*            /looks/data/:splat         200
+
+# === Fallback for everything else in /looks/ ===
+/looks/*                 /looks/look.html           200

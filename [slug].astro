@@ -27,8 +27,8 @@ const showRelated = [...related, ...otherRelated].slice(0, 3);
   .breadcrumb a:hover { color: #2a2420; }
   .breadcrumb span { margin: 0 8px; opacity: 0.5; }
   .look-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding: 48px 0 80px; align-items: start; }
-  .hero-image-wrap { overflow: hidden; border-radius: 4px; background: #f5f0e8; position: sticky; top: 88px; width: 100%; height: 0; padding-bottom: 125%; }
-  .hero-image-wrap img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .hero-image-wrap { width: 100%; max-height: 700px; overflow: hidden; border-radius: 4px; background: #f5f0e8; position: sticky; top: 88px; }
+  .hero-image-wrap img { width: 100%; height: 700px; object-fit: cover; object-position: center top; display: block; }
   .hero-content { padding-top: 8px; }
   .hero-category { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #8a7464; margin-bottom: 20px; }
   .hero-title { font-family: 'Fraunces', serif; font-size: clamp(26px, 3.5vw, 48px); font-weight: 400; line-height: 1.1; letter-spacing: -1px; margin-bottom: 28px; }
@@ -64,7 +64,7 @@ const showRelated = [...related, ...otherRelated].slice(0, 3);
   .more-card-title { font-family: 'Fraunces', serif; font-size: 16px; font-weight: 400; line-height: 1.3; }
   @media (max-width: 768px) {
     .look-hero { grid-template-columns: 1fr; gap: 28px; padding: 32px 0 60px; }
-    .hero-image-wrap { position: relative; height: 0; padding-bottom: 100%; }
+    .hero-image-wrap { width: 100%; max-height: 700px; overflow: hidden; border-radius: 4px; background: #f5f0e8; position: sticky; top: 88px; }
   }
 </style>
 

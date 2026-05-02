@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { LOOKS } from '../../data/looks.js';
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="All Looks" description="All quiet luxury finds on Amazon. Bags, shoes, dresses, accessories — the look for less." activeCategory="all">
+<style>
+  .catalog-hero { padding: 60px 0 40px; }
+  .catalog-eyebrow { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #8a7464; margin-bottom: 14px; }
+  .catalog-title { font-family: 'Fraunces', serif; font-size: clamp(32px, 5vw, 56px); font-weight: 400; letter-spacing: -1.5px; line-height: 1; }
+  .catalog-title em { font-style: italic; color: #5c4a3a; }
+  .filter-bar { display: flex; gap: 8px; padding: 32px 0; border-bottom: 1px solid rgba(42,36,32,0.1); flex-wrap: wrap; }
+  .filter-btn { padding: 8px 20px; border: 1px solid rgba(42,36,32,0.2); background: transparent; color: #5c4a3a; font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; border-radius: 2px; }
+  .filter-btn:hover { border-color: #2a2420; color: #2a2420; }
+  .filter-btn.active { background: #2a2420; color: #faf6ee; border-color: #2a2420; }
+  .catalog-count { font-size: 12px; color: #8a7464; margin-left: auto; align-self: center; }
+  .looks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; padding: 48px 0 80px; }
+  .look-card { text-decoration: none; color: inherit; display: block; }
+  .look-card[data-cat].hidden { display: none; }
+  .look-card-image { aspect-ratio: 4/5; overflow: hidden; border-radius: 2px; background: #f5f0e8; margin-bottom: 16px; }
+  .look-card-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+  .look-card:hover .look-card-image img { transform: scale(1.04); }
+  .look-card-category { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #8a7464; margin-bottom: 6px; }
+  .look-card-title { font-family: 'Fraunces', serif; font-size: 18px; font-weight: 400; line-height: 1.3; margin-bottom: 6px; }
+  .look-card-price { font-family: 'Fraunces', serif; font-size: 15px; color: #5c4a3a; }
+  @media (max-width: 900px) { .looks-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; } }
+  @media (max-width: 560px) { .looks-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 14px; } .filter-btn { padding: 7px 14px; font-size: 10px; } }
+</style>
+
+<div class="container">
+  <div class="catalog-hero">
+    <p class="catalog-eyebrow">The Edit</p>
+    <h1 class="catalog-title">All <em>Looks</em></h1>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="bags">Bags</button>
+    <button class="filter-btn" data-filter="shoes">Shoes</button>
+    <button class="filter-btn" data-filter="dresses">Dresses</button>
+    <button class="filter-btn" data-filter="accessories">Accessories</button>
+    <span class="catalog-count" id="count">{LOOKS.length} looks</span>
+  </div>
+
+  <div class="looks-grid" id="grid">
+    {LOOKS.map(look => (
+      <a href={`${base}looks/${look.slug}/`} class="look-card" data-cat={look.category}>
+        <div class="look-card-image">
+          <img src={`${base}${look.heroImage.replace(/^\//, '')}`} alt={look.title} loading="lazy">
+        </div>
+        <p class="look-card-category">{look.category}</p>
+        <h2 class="look-card-title">{look.title}</h2>
+        <p class="look-card-price">{look.price}</p>
+      </a>
+    ))}
+  </div>
+</div>
+
+<script>
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.look-card[data-cat]');
+  const countEl = document.getElementById('count');
+
+  // Check URL param on load
+  const urlCat = new URLSearchParams(window.location.search).get('cat') || 'all';
+  setFilter(urlCat);
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      history.replaceState({}, '', f === 'all' ? window.location.pathname : `?cat=${f}`);
+      setFilter(f);
+    });
+  });
+
+  function setFilter(f) {
+    btns.forEach(b => b.classList.toggle('active', b.dataset.filter === f));
+    let visible = 0;
+    cards.forEach(c => {
+      const show = f === 'all' || c.dataset.cat === f;
+      c.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    countEl.textContent = `${visible} look${visible !== 1 ? 's' : ''}`;
+  }
+</script>
+</BaseLayout>

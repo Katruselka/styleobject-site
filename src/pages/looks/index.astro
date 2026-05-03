@@ -53,7 +53,7 @@ const base = import.meta.env.BASE_URL;
         </a>
         <div class="look-card-meta">
           <p class="look-card-category">{look.category}</p>
-          <a href={`${base}looks/${look.slug}/`} class="look-card-title">{look.title}</a>
+          <a href={look.amazon} class="look-card-title" target="_blank" rel="nofollow sponsored">{look.title}</a>
           <p class="look-card-price">{look.price}</p>
           <a href={look.amazon} class="look-card-amazon" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
         </div>

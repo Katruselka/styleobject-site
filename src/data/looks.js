@@ -1,311 +1,65 @@
 export const LOOKS = [
-  {
-    slug: 'linen-maxi-dress',
-    title: 'The Linen Dress That Feels Expensive',
-    category: 'dresses',
-    price: '$39.99',
-    priceOriginal: '$49.99',
-    amazon: 'https://amzn.to/4tB00s0',
-    heroImage: '/images/hero-linen-maxi-dress.jpg',
-    productImage: '/images/product-linen-maxi-dress.jpg',
-    productName: 'Linen Maxi Dress with Contrast Spaghetti Straps',
-    productDesc: 'Natural linen blend, contrast black trim and spaghetti straps, open tie-back, floor-length maxi silhouette',
-    story: 'Natural linen with a quietly brilliant detail — contrast black spaghetti straps and trim that turn a simple maxi into something editorial. Open tie-back, floor-grazing length, the kind of drape that looks effortless and expensive at once. The silhouette works for a slow Mediterranean lunch, a gallery opening, or golden hour on the terrace.',
-    tips: [
-      { label: 'On Fit', text: 'Size up if between sizes — linen has minimal stretch. The relaxed A-line silhouette flows beautifully even in a larger size. The tie-back lets you adjust fit at the waist.' },
-      { label: 'Styling', text: 'The contrast black straps do the accessorizing for you — keep jewelry minimal. Gold small hoops, a delicate pendant necklace, and either the raffia flat sandals or woven Mary Janes complete the look.' },
-      { label: 'Day to Night', text: 'Wear with flat sandals and a straw hat for daytime. For evening, swap to the blue raffia platforms, add a light linen blazer in cream. The open back becomes the focal point under restaurant lighting — let it.' }
-    ]
-  },
-  {
-    slug: 'woven-mary-janes',
-    title: 'Woven Mary Janes That Look Expensive',
-    category: 'shoes',
-    price: '$59.99',
-    priceOriginal: '$79.99',
-    amazon: 'https://amzn.to/49fgduw',
-    heroImage: '/images/hero-woven-flats.jpg',
-    productImage: '/images/product-woven-flats.jpg',
-    productName: 'CUSHIONAIRE Weston Hand-Woven Mary Jane Flats',
-    productDesc: 'Hand-woven leather upper, memory foam footbed, classic Mary Jane strap with adjustable buckle',
-    story: 'The woven Mary Jane is the quiet luxury shoe of the season — structured enough for the office, relaxed enough for a slow Saturday. CUSHIONAIRE\'s Weston reads designer from every angle, with hand-woven leather detail and a memory foam footbed that means you actually want to walk in them. Found on Amazon. Nobody needs to know.',
-    tips: [
-      { label: 'On Fit', text: 'Order true to size — the woven leather softens beautifully after the first few wears. Memory foam means no break-in pain.' },
-      { label: 'The Pairing', text: 'Burgundy woven flats love cream-and-tan accessories. A cream raffia tote with tan leather handles is the perfect companion.' },
-      { label: 'Day to Night', text: 'White linen dress and minimal gold jewelry for daytime. Cream linen pants and a silk scarf for evening dinners.' }
-    ]
-  },
-  {
-    slug: 'jw-pei-woven-tote',
-    title: 'The Woven Bag That Looks Expensive',
-    category: 'bags',
-    price: '$84.15',
-    priceOriginal: '$99.00',
-    amazon: 'https://www.amazon.com/dp/B0DPHYW28K/ref=cm_sw_r_as_gl_api_gl_i_dl_K3DCHZ3P4MRHE2GSSMNV?linkCode=ml1&tag=aipromtsgen-20&linkId=ed93cbb8fb7ad6c594be7755c2a8875e&th=1',
-    heroImage: '/images/hero-jw-pei-tote.jpg',
-    productImage: '/images/product-jw-pei-tote.jpg',
-    productName: 'JW PEI Hana Mini Woven Tote',
-    productDesc: 'Woven vegan leather tote, cream and tan palette, gold hardware, structured silhouette',
-    story: 'JW PEI built their entire brand on looking expensive at a price that feels impossible. The Hana Mini Woven Tote is the one people screenshot from their feed without realizing it\'s not a four-figure bag. Cream-and-tan woven leather, gold hardware, a shape that stays structured. The kind of bag that changes an outfit without trying.',
-    tips: [
-      { label: 'On Size', text: 'The mini fits a phone, small wallet, sunglasses, and a silk scarf — perfect everyday-to-evening size.' },
-      { label: 'Styling', text: 'The cream-and-tan palette elevates everything. Pair with white linen for the Mediterranean look, with cream wide-leg pants for office-quiet, with a slip dress for evening.' },
-      { label: 'Care', text: 'Spot clean with a slightly damp cloth. Store stuffed with tissue paper to keep the structured shape.' }
-    ]
-  },
-  {
-    slug: 'handmade-straw-tote',
-    title: 'The Straw Tote Everyone Will Ask About',
-    category: 'bags',
-    price: '$39.99',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/4sWv5Fk',
-    heroImage: '/images/hero-straw-tote.jpg',
-    productImage: '/images/product-straw-tote.jpg',
-    productName: 'Handmade Woven Straw Beach Tote Bag',
-    productDesc: 'Handwoven straw with black leather handles and black woven trim, zipper closure, roomy interior',
-    story: 'There is a particular kind of straw bag — handwoven, slightly imperfect, with real leather handles — that costs a fortune in boutiques. This one is on Amazon. The black handles and trim give it an editorial edge that most beach totes lack. Throw in a silk scarf, a paperback, and the raffia sandals. The vacation feeling follows.',
-    tips: [
-      { label: 'On Size', text: 'Large enough for a beach day — fits a towel, sunscreen, book, water bottle. The zipper closure means nothing falls out.' },
-      { label: 'The Pairing', text: 'The black-and-beige palette pairs with cream linen for a refined coastal look, or with a black slip dress for evening. Let the black handles be the visual anchor.' },
-      { label: 'Care', text: 'Spot clean with a damp cloth. Stuff with tissue paper when not in use. Store away from direct sunlight.' }
-    ]
-  },
-  {
-    slug: 'raffia-flat-sandals',
-    title: 'Raffia Sandals for Slow Coastal Days',
-    category: 'shoes',
-    price: '$33.13',
-    priceOriginal: '$38.98',
-    amazon: 'https://amzn.to/4mNYPTf',
-    heroImage: '/images/hero-raffia-sandals.jpg',
-    productImage: '/images/product-raffia-sandals.jpg',
-    productName: 'EQAUDES Raffia Flat Sandals',
-    productDesc: 'Natural raffia upper, flat sole, adjustable ankle strap, lightweight construction',
-    story: 'Raffia has a way of making everything look more expensive and more European at once. EQAUDES got the proportions exactly right — slim straps, clean silhouette, the kind of natural texture that photographs beautifully and feels even better. Wear with white linen, wear with wide-leg trousers, wear to breakfast on a terrace overlooking the sea.',
-    tips: [
-      { label: 'On Fit', text: 'Run slightly narrow — if you have wider feet, size up half. The raffia softens after a few wears.' },
-      { label: 'The Coastal Pairing', text: 'Pair with flowing white linen and beige wide-leg trousers. Add a striped silk scarf on a straw tote, tortoiseshell sunglasses, gold hoops.' },
-      { label: 'Day to Night', text: 'Wear with denim for daytime, with a slip dress for evening. The natural straw color goes with everything in your warm-weather wardrobe.' }
-    ]
-  },
-  {
-    slug: 'taupe-mini-satchel',
-    title: 'The Taupe Satchel That Looks Designer',
-    category: 'bags',
-    price: '$29.99',
-    priceOriginal: '$39.99',
-    amazon: 'https://www.amazon.com/dp/B0D9XLYS19/ref=cm_sw_r_as_gl_api_gl_i_ENH4D1MHCTD6RH1TQF88?linkCode=ml1&tag=aipromtsgen-20&linkId=34f02caf1a7325238844ee18fa5eb443&th=1',
-    heroImage: '/images/hero-taupe-satchel.jpg',
-    productImage: '/images/product-taupe-satchel.jpg',
-    productName: 'YFGBCX Mini Satchel Top Handle Bag',
-    productDesc: 'Structured mini satchel, top handle and detachable crossbody strap, gold hardware, multiple interior pockets',
-    story: 'The structured mini satchel is the most quietly confident bag shape there is. This one — $30 on Amazon — has the proportions of a bag that should cost ten times as much. The warm taupe leather and gold hardware read designer. The three carrying options mean it works for everything from Monday meetings to weekend markets.',
-    tips: [
-      { label: 'On Size', text: 'Small but roomy — fits phone, cards, lipstick, sunglasses, AirPods. The structured shape means it never looks slouchy.' },
-      { label: 'The Pairing', text: 'Taupe pairs with cream for quiet luxury, with white denim for weekends, with black for evening. The gold hardware reads designer-level against any fabric.' },
-      { label: 'Day to Night', text: 'Top-handle for the office, crossbody strap for weekends, hand-carried for evening — three completely different moods, one bag.' }
-    ]
-  },
-  {
-    slug: 'gold-diamond-ring',
-    title: 'The Ring That Looks Like an Heirloom',
-    category: 'accessories',
-    price: '$18.95',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/4mWUcXh',
-    heroImage: '/images/hero-gold-ring.png',
-    productImage: '/images/product-gold-ring.png',
-    productName: 'PAVOI 14K Gold Plated CZ Stackable Eternity Band',
-    productDesc: '14K gold plated sterling silver, pavé cubic zirconia setting, slim 1.5mm band, tarnish resistant',
-    story: 'The pavé eternity band is one of those rare pieces that photographs identically to a ring that costs a hundred times more. PAVOI\'s 14K gold-plated sterling silver with cubic zirconia — slim enough to stack, brilliant enough to wear alone. The kind of ring that catches light at exactly the right moment.',
-    tips: [
-      { label: 'On Sizing', text: 'Runs true to size. If between sizes, go up — the pavé setting means it cannot be easily resized. The band is very slim (about 1.5mm), which makes it ideal for stacking 2–3 rings without bulk.' },
-      { label: 'How to Stack', text: 'The gold tone pairs beautifully with other delicate gold pieces. Try it between a plain gold band and a small signet ring for a curated stack. Or wear three of the same for an eternity look that reads like a single statement piece.' },
-      { label: 'Everyday Wear', text: 'The 14K gold plating on sterling silver is much more durable than standard gold-filled. Remove before swimming or showering to preserve the finish. Store in the pouch to avoid scratching against harder metals.' }
-    ]
-  },
-  {
-    slug: 'rectangle-sunglasses',
-    title: 'The Sunglasses That Make Every Outfit Look Intentional',
-    category: 'accessories',
-    price: '$12.99',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/3YvXxxx',
-    heroImage: '/images/hero-sunglasses.png',
-    productImage: '/images/product-sunglasses.png',
-    productName: 'Rectangle Retro Sunglasses for Women',
-    productDesc: 'Small rectangular frame, warm beige acetate, UV400 lens protection, lightweight construction',
-    story: 'The right sunglasses frame changes the entire reading of an outfit. Small rectangles — the quiet luxury frame — create an editorial intentionality that overtly trendy shapes never quite achieve. This pair, in warm beige, works as a neutral with every warm-weather combination. Under $13. The single most impactful accessory addition to the poolside formula.',
-    tips: [
-      { label: 'The Shape', text: 'Small rectangular frames are the quiet luxury alternative to everything — oversized cat-eye, aviator, shield. They read as intentional rather than trendy, which is exactly why they photograph so well and age so gracefully.' },
-      { label: 'Color Pairing', text: 'The warm beige frame tone works as a neutral. It disappears into cream and linen looks, adds warmth to monochrome black, and complements gold jewelry better than silver-toned frames. The universal summer frame color.' },
-      { label: 'Styling', text: 'Wear perched slightly forward on the nose for the editorial look you see in every aspirational travel photo. Pair with gold hoops, a silk scarf, and a straw tote for the complete coastal aesthetic.' }
-    ]
-  },
-  {
-    slug: 'silk-scarf',
-    title: 'The Silk Scarf That Ties Everything Together',
-    category: 'accessories',
-    price: '$14.98',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/4cTRgpC',
-    heroImage: '/images/hero-sunglasses.png',
-    productImage: '/images/product-silk-scarf.png',
-    productName: 'JERLA 100% Mulberry Silk Square Neck Scarf',
-    productDesc: '100% mulberry silk, 35×35 inch square, hand-rolled edges, multiple wearing options',
-    story: 'A silk scarf is the most versatile object in a summer wardrobe. Neck, bag handle, hair — three completely different looks, one piece of silk. JERLA\'s mulberry silk square has the weight and sheen of scarves that cost forty times more. The kind of accessory that makes everything else look more considered.',
-    tips: [
-      { label: 'Three Ways to Wear', text: 'Knot loosely at the neck over a linen shirt for the French Riviera look. Tie around the handle of a straw or raffia tote for instant elevation. Fold into a thin band and use as a hair tie or headband with a low bun.' },
-      { label: 'Care', text: '100% mulberry silk should be hand-washed in cold water with a gentle silk detergent, or dry-cleaned. Never wring — press gently in a clean towel and air dry flat away from sunlight. Iron on the lowest setting through a cloth.' },
-      { label: 'The Bag Knot', text: 'The easiest way to style it: fold diagonally into a long strip, wrap around your bag handle twice and knot loosely, letting the ends trail. Takes ten seconds and makes a $40 straw tote look like it cost three times that.' }
-    ]
-  },
-  {
-    slug: 'red-sneakers',
-    title: 'The Red Sneakers You Will Wear Every Single Day',
-    category: 'shoes',
-    price: '$49.90',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/4umYPMI',
-    heroImage: '/images/hero-red-sneakers.png',
-    productImage: '/images/product-red-sneakers.png',
-    productName: 'Lightweight Memory Foam Platform Sneakers',
-    productDesc: 'Platform sole, memory foam insole, canvas upper in bold red, classic white stripe detail',
-    story: 'Red sneakers are the unexpected move that makes the rest of the outfit look like it was planned by a stylist. The platform gives them presence without height. The memory foam means you actually walk in them. Wear with the burgundy Dokotoo set for the monochromatic power look, or with cream linen for the fashion-girl contrast that always gets asked about.',
-    tips: [
-      { label: 'On Fit', text: 'Run true to size for most, but if you have wide feet size up half. The memory foam insole breaks in immediately — no stiff first-day discomfort. The platform adds about an inch of height without feeling like a heel.' },
-      { label: 'The Unexpected Pairing', text: 'Red sneakers with matching-tone coordinates is the move — the burgundy Dokotoo two-piece set with these creates a monochromatic sporty-luxe look that photographs like a campaign. The white stripe detail becomes the contrast element.' },
-      { label: 'Casual to Smart', text: 'Wear with straight-leg black trousers and a white tee for smart casual. With wide-leg cream linen for the elevated weekend look. With a midi skirt and tucked silk shirt for the unexpected fashion-girl styling that always gets asked about.' }
-    ]
-  },
-  {
-    slug: 'dokotoo-burgundy-set',
-    title: 'The Two-Piece Set That Looks Designer',
-    category: 'dresses',
-    price: '$37.99',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/4cVSjp4',
-    heroImage: '/images/hero-dokotoo-set.png',
-    productImage: '/images/product-dokotoo-set.png',
-    productName: 'Dokotoo 2-Piece Peplum Top and Wide-Leg Pants Set',
-    productDesc: 'Ribbed knit fabric, peplum top with structured hem, wide-leg trousers with elastic waist, deep burgundy',
-    story: 'Head-to-toe deep burgundy is the quiet luxury version of a power move. Dokotoo\'s ribbed two-piece — peplum top, wide-leg trousers — reads designer in every photo and in person. The kind of set you wear to a dinner and spend the evening deflecting compliments.',
-    tips: [
-      { label: 'On Fit', text: 'The elastic waist on the trousers makes sizing flexible — order your usual size. The ribbed fabric has good stretch. The peplum top is fitted through the body and flares at the hem, which works beautifully on all silhouettes.' },
-      { label: 'The Tonal Look', text: 'Wearing head-to-toe deep burgundy is the quiet luxury equivalent of a power move. Keep accessories minimal — small gold hoops, the pavé eternity ring, a black leather crossbody. Let the colour do all the work.' },
-      { label: 'Sneaker Styling', text: 'The burgundy set with red sneakers creates a monochromatic sporty-luxe look that reads like a fashion campaign. The white stripe on the sneakers becomes the only contrast element — exactly the right amount of detail.' }
-    ]
-  },
-  {
-    slug: 'linen-poolside-set',
-    title: 'The Linen Set That Looks Like a Five-Star Holiday',
-    category: 'dresses',
-    price: '$16.99',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/3YvXlp1',
-    heroImage: '/images/hero-linen-poolside.png',
-    productImage: '/images/product-linen-poolside.png',
-    productName: "Women's Batwing Sleeve Linen Cotton Two Piece Set",
-    productDesc: 'Linen-cotton blend, batwing sleeve top, wide-leg trousers, elastic waist, relaxed fit throughout',
-    story: 'The poolside quiet luxury look starts here. Cream linen-cotton, batwing sleeve, wide-leg trousers — the silhouette that reads five-star hotel from across the terrace. Under $17. Add the flat taupe slides, the straw tote with a silk scarf on the handle, rectangle sunglasses. The entire look costs less than a good candle.',
-    tips: [
-      { label: 'On Fit', text: 'The batwing sleeve is intentionally oversized — this is the silhouette. Size down if you prefer a slightly more fitted look through the body, or order your usual size for the full relaxed drape. The trousers have an elastic waist and run generously.' },
-      { label: 'The Complete Look', text: 'This set is the foundation of the poolside quiet luxury aesthetic: add taupe flat slides, beige rectangle sunglasses, a straw tote with a silk scarf knotted on the handle, and minimal gold jewelry. Every piece available on Amazon under $25.' },
-      { label: 'Linen Care', text: 'Machine wash cold on a gentle cycle, reshape while damp and air dry. Linen wrinkles are part of the aesthetic — a slightly rumpled cream linen set reads as effortlessly chic, not careless. A light steam before wearing brings it back to perfect.' }
-    ]
-  },
-  {
-    slug: 'flat-slides',
-    title: 'The Flat Slides That Feel Like a Five-Star Holiday',
-    category: 'shoes',
-    price: '$20.99',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/3YvXf1s',
-    heroImage: '/images/hero-flat-slides.png',
-    productImage: '/images/hero-flat-slides.png',
-    productName: 'Open Toe Fish Mouth Flat Slides',
-    productDesc: 'Taupe leather upper, flat footbed, minimalist open-toe silhouette, cushioned insole',
-    story: 'Flat slides with the right proportions and the right color — taupe, always taupe — are the most versatile shoe in a summer wardrobe. These read polished enough for dinner, relaxed enough for the pool deck. The flat footbed is genuinely comfortable for all-day wear. Under $21 on Amazon.',
-    tips: [
-      { label: 'On Sizing', text: 'Size up half if between sizes — the leather has minimal stretch initially but softens quickly. The flat footbed is genuinely comfortable for all-day wear on smooth surfaces like pool decks and hotel floors.' },
-      { label: 'The Poolside Formula', text: 'These slides are the anchor of the poolside linen aesthetic: cream linen two-piece set, straw tote, rectangle sunglasses, silk scarf knotted on the bag, minimal gold jewelry. Every piece under $25, the entire look under $80.' },
-      { label: 'Beyond the Pool', text: 'Wear to breakfast, to the market, to a casual dinner — the taupe leather reads as polished enough for most warm-weather occasions. The minimal silhouette means they work under wide-leg trousers as well as with a flowing midi.' }
-    ]
-  },
-  {
-    slug: 'blue-raffia-platforms',
-    title: 'Blue Raffia Platforms That Feel Like Vacation',
-    category: 'shoes',
-    price: '$39.98',
-    priceOriginal: '$49.99',
-    amazon: 'https://www.amazon.com/dp/B0F83YMBPH/ref=cm_sw_r_as_gl_api_gl_i_K7YQ0YARJVF9MKBCCED0?linkCode=ml1&tag=aipromtsgen-20&linkId=168ccf10f864a1b915fe51026a8a7ded&th=1&psc=1',
-    heroImage: '/images/hero-blue-raffia-platforms.jpg',
-    productImage: '/images/product-blue-raffia-platforms.jpg',
-    productName: 'Monrovia Platform Raffia Slides',
-    productDesc: 'Powder blue raffia upper, flatform sole, open-toe silhouette, adjustable ankle strap',
-    story: 'Powder blue raffia on a flatform — the slide that makes any outfit look like it was photographed in Positano. The color reads effortlessly against cream, sand, and warm neutrals. The flatform gives them presence without the instability of a heel. The shoe that makes a simple linen dress into a look.',
-    tips: [
-      { label: 'On Sizing', text: 'True-to-size for narrow to medium feet; size up half for wider feet. The raffia softens after a few wears.' },
-      { label: 'Color Pairing', text: 'Powder blue acts like a neutral against cream, sand, and warm taupe. Try with a linen midi or wide-leg trousers.' },
-      { label: 'From Beach to Bistro', text: 'The flatform makes them dressier than a flat slide — pair with a straw tote and gold hoops for aperitivo or a long Mediterranean lunch.' }
-    ]
-  }
-  ,
-  {
-    slug: 'beige-linen-set',
-    title: 'The Beige Set That Looks Like a $200 Outfit',
-    category: 'dresses',
-    price: '$29.99',
-    priceOriginal: '$34.99',
-    amazon: 'https://amzn.to/42PrldW',
-    heroImage: '/images/hero-beige-linen-set.jpg',
-    productImage: '/images/product-beige-linen-set.jpg',
-    productName: 'Two Piece Sets for Women Summer Outfits Oversized Wide Leg Crop Pants Lounge Sets',
-    productDesc: 'Oversized tee + wide-leg crop pants, soft lounge fabric, relaxed fit, airport and beach ready',
-    story: 'The beige two-piece that reads like a designer uniform. Oversized tee, wide-leg crop pants, the kind of effortless monochrome that always looks intentional. Under $30 on Amazon. Wear it to the airport, to brunch, to anywhere you want to look like you tried without trying.',
-    tips: [
-      { label: 'On Fit', text: 'The oversized fit is intentional — size down if you want a more fitted silhouette, or wear your usual size for the full relaxed look. The wide-leg crop hits just above the ankle on most heights.' },
-      { label: 'Styling', text: 'The monochrome beige is the entire look. Keep accessories minimal — white sneakers or beige slides, a textured tote, small gold hoops. Add a silk scarf knotted on the bag for the elevated version.' },
-      { label: 'Day to Night', text: 'White sneakers for daytime errands and travel. Swap to beige flat slides or raffia sandals for evening. The set transitions completely with just a shoe change.' }
-    ]
-  },
-  {
-    slug: 'beige-blazer',
-    title: 'The Blazer That Makes Everything Look Expensive',
-    category: 'dresses',
-    price: '$49.99',
-    priceOriginal: '$59.99',
-    amazon: 'https://amzn.to/4tRHM5F',
-    heroImage: '/images/hero-beige-blazer.jpg',
-    productImage: '/images/product-beige-blazer.jpg',
-    productName: 'Long Sleeve Lapel Open Front Suit Blazer',
-    productDesc: 'Structured lapel blazer, open front, tailored fit, beige — office to evening',
-    story: 'A well-cut beige blazer is the single most versatile piece in a quiet luxury wardrobe. This one has the structure and lapel of a blazer that should cost ten times more. Wear over a white tee and straight trousers for the off-duty editor look. Over a slip dress for evening. Over nothing but confidence for the weekend.',
-    tips: [
-      { label: 'On Fit', text: 'Size up if you want the oversized editorial look — one size up gives you the slightly-too-big silhouette that reads expensive. True to size for a more fitted, tailored look.' },
-      { label: 'The Classic Formula', text: 'White tee + straight-leg trousers + this blazer + beige loafers or mary janes = the quiet luxury uniform. Add the taupe mini satchel and minimal gold jewelry. Done.' },
-      { label: 'Evening', text: 'Throw over a silk slip dress or the satin shorts for instant evening elevation. The structured lapel dresses up anything beneath it.' }
-    ]
-  },
-  {
-    slug: 'satin-lace-shorts',
-    title: 'Satin Shorts That Look Way More Expensive',
-    category: 'dresses',
-    price: '$19.98',
-    priceOriginal: null,
-    amazon: 'https://amzn.to/4tSg8p8',
-    heroImage: '/images/hero-satin-lace-shorts.jpg',
-    productImage: '/images/product-satin-lace-shorts.jpg',
-    productName: 'Satin Silk Lace Shorts Low Rise Micro',
-    productDesc: 'Satin fabric with lace trim hem, low rise, micro length, burgundy',
-    story: 'Burgundy satin with lace trim — the shorts that look like they came from a boutique in Paris and cost $20 on Amazon. Wear with an oversized cream tee for the effortless contrast that always photographs beautifully. The lace hem does all the work.',
-    tips: [
-      { label: 'On Sizing', text: 'Size up for comfort — satin runs small and has minimal stretch. The low-rise micro silhouette is intentional; pair with a longer tee for balance.' },
-      { label: 'The Contrast Formula', text: 'Burgundy satin + cream oversized tee = the look. Keep everything else neutral — beige slides, gold hoops, no bag or a minimal clutch. The shorts are the focal point.' },
-      { label: 'Styling', text: 'Works as elevated loungewear at home or styled out for a casual evening. The lace trim elevates it beyond typical shorts — tuck the tee slightly at the front for a more intentional silhouette.' }
-    ]
-  }
+
+  // ── EXISTING 14 LOOKS (prices → list price) ───────────────────────────
+
+  { slug: 'linen-maxi-dress', title: 'The Linen Dress That Feels Expensive', category: 'dresses', price: '$49.99', amazon: 'https://amzn.to/4tB00s0', heroImage: '/images/hero-linen-maxi-dress.jpg', productImage: '/images/product-linen-maxi-dress.jpg', productName: 'Linen Maxi Dress with Contrast Spaghetti Straps', productDesc: 'Natural linen blend, contrast black trim and spaghetti straps, open tie-back, floor-length maxi silhouette', story: 'Natural linen with a quietly brilliant detail — contrast black spaghetti straps and trim that turn a simple maxi into something editorial. Open tie-back, floor-grazing length, the kind of drape that looks effortless and expensive at once.', tips: [ { label: 'On Fit', text: 'Size up if between sizes — linen has minimal stretch. The tie-back lets you adjust fit at the waist.' }, { label: 'Styling', text: 'The contrast black straps do the accessorizing for you — keep jewelry minimal. Gold hoops and the raffia flat sandals complete the look.' }, { label: 'Day to Night', text: 'Wear with flat sandals and a straw hat for daytime. For evening, swap to the blue raffia platforms, add a cream linen blazer.' } ] },
+
+  { slug: 'woven-mary-janes', title: 'Woven Mary Janes That Look Expensive', category: 'shoes', price: '$79.99', amazon: 'https://amzn.to/49fgduw', heroImage: '/images/hero-woven-flats.jpg', productImage: '/images/product-woven-flats.jpg', productName: 'CUSHIONAIRE Weston Hand-Woven Mary Jane Flats', productDesc: 'Hand-woven leather upper, memory foam footbed, classic Mary Jane strap with adjustable buckle', story: 'The woven Mary Jane is the quiet luxury shoe of the season — structured enough for the office, relaxed enough for a slow Saturday. CUSHIONAIRE\'s Weston reads designer from every angle, with a memory foam footbed that means you actually want to walk in them.', tips: [ { label: 'On Fit', text: 'Order true to size — the woven leather softens beautifully after the first few wears.' }, { label: 'The Pairing', text: 'Burgundy woven flats love cream-and-tan accessories. A cream raffia tote with tan leather handles is the perfect companion.' }, { label: 'Day to Night', text: 'White linen dress and minimal gold jewelry for daytime. Cream linen pants and a silk scarf for evening dinners.' } ] },
+
+  { slug: 'jw-pei-woven-tote', title: 'The Woven Bag That Looks Expensive', category: 'bags', price: '$99.00', amazon: 'https://www.amazon.com/dp/B0DPHYW28K/ref=cm_sw_r_as_gl_api_gl_i_dl_K3DCHZ3P4MRHE2GSSMNV?linkCode=ml1&tag=aipromtsgen-20', heroImage: '/images/hero-jw-pei-tote.jpg', productImage: '/images/product-jw-pei-tote.jpg', productName: 'JW PEI Hana Mini Woven Tote', productDesc: 'Woven vegan leather tote, cream and tan palette, gold hardware, structured silhouette', story: 'JW PEI built their entire brand on looking expensive at a price that feels impossible. The Hana Mini Woven Tote is the one people screenshot from their feed without realizing it\'s not a four-figure bag.', tips: [ { label: 'On Size', text: 'The mini fits a phone, small wallet, sunglasses, and a silk scarf — perfect everyday-to-evening size.' }, { label: 'Styling', text: 'The cream-and-tan palette elevates everything. Pair with white linen for the Mediterranean look.' }, { label: 'Care', text: 'Spot clean with a slightly damp cloth. Store stuffed with tissue paper to keep the structured shape.' } ] },
+
+  { slug: 'handmade-straw-tote', title: 'The Straw Tote Everyone Will Ask About', category: 'bags', price: '$39.99', amazon: 'https://amzn.to/4sWv5Fk', heroImage: '/images/hero-straw-tote.jpg', productImage: '/images/product-straw-tote.jpg', productName: 'Handmade Woven Straw Beach Tote Bag', productDesc: 'Handwoven straw with black leather handles and black woven trim, zipper closure, roomy interior', story: 'There is a particular kind of straw bag — handwoven, slightly imperfect, with real leather handles — that costs a fortune in boutiques. This one is on Amazon. The black handles and trim give it an editorial edge that most beach totes lack.', tips: [ { label: 'On Size', text: 'Large enough for a beach day — fits a towel, sunscreen, book, water bottle.' }, { label: 'The Pairing', text: 'The black-and-beige palette pairs with cream linen for a refined coastal look.' }, { label: 'Care', text: 'Spot clean with a damp cloth. Store away from direct sunlight.' } ] },
+
+  { slug: 'raffia-flat-sandals', title: 'Raffia Sandals for Slow Coastal Days', category: 'shoes', price: '$38.98', amazon: 'https://amzn.to/4mNYPTf', heroImage: '/images/hero-raffia-sandals.jpg', productImage: '/images/product-raffia-sandals.jpg', productName: 'EQAUDES Raffia Flat Sandals', productDesc: 'Natural raffia upper, flat sole, adjustable ankle strap, lightweight construction', story: 'Raffia has a way of making everything look more expensive and more European at once. EQAUDES got the proportions exactly right — slim straps, clean silhouette, the kind of natural texture that photographs beautifully.', tips: [ { label: 'On Fit', text: 'Run slightly narrow — if you have wider feet, size up half. The raffia softens after a few wears.' }, { label: 'The Coastal Pairing', text: 'Pair with flowing white linen and beige wide-leg trousers. Add a striped silk scarf on a straw tote.' }, { label: 'Day to Night', text: 'Wear with denim for daytime, with a slip dress for evening.' } ] },
+
+  { slug: 'taupe-mini-satchel', title: 'The Taupe Satchel That Looks Designer', category: 'bags', price: '$39.99', amazon: 'https://www.amazon.com/dp/B0D9XLYS19/ref=cm_sw_r_as_gl_api_gl_i_ENH4D1MHCTD6RH1TQF88?linkCode=ml1&tag=aipromtsgen-20', heroImage: '/images/hero-taupe-satchel.jpg', productImage: '/images/product-taupe-satchel.jpg', productName: 'YFGBCX Mini Satchel Top Handle Bag', productDesc: 'Structured mini satchel, top handle and detachable crossbody strap, gold hardware, multiple interior pockets', story: 'The structured mini satchel is the most quietly confident bag shape there is. The warm taupe leather and gold hardware read designer. Three carrying options mean it works for everything from Monday meetings to weekend markets.', tips: [ { label: 'On Size', text: 'Small but roomy — fits phone, cards, lipstick, sunglasses, AirPods.' }, { label: 'The Pairing', text: 'Taupe pairs with cream for quiet luxury, with white denim for weekends, with black for evening.' }, { label: 'Day to Night', text: 'Top-handle for the office, crossbody strap for weekends, hand-carried for evening.' } ] },
+
+  { slug: 'gold-diamond-ring', title: 'The Ring That Looks Like an Heirloom', category: 'accessories', price: '$18.95', amazon: 'https://amzn.to/4mWUcXh', heroImage: '/images/hero-gold-ring.png', productImage: '/images/product-gold-ring.png', productName: 'PAVOI 14K Gold Plated CZ Stackable Eternity Band', productDesc: '14K gold plated sterling silver, pavé cubic zirconia setting, slim 1.5mm band, tarnish resistant', story: 'The pavé eternity band photographs identically to a ring that costs a hundred times more. Slim enough to stack, brilliant enough to wear alone. The kind of ring that catches light at exactly the right moment.', tips: [ { label: 'On Sizing', text: 'Runs true to size. If between sizes, go up.' }, { label: 'How to Stack', text: 'Try it between a plain gold band and a small signet ring for a curated stack.' }, { label: 'Everyday Wear', text: 'Remove before swimming or showering to preserve the finish.' } ] },
+
+  { slug: 'rectangle-sunglasses', title: 'The Sunglasses That Make Every Outfit Look Intentional', category: 'accessories', price: '$12.99', amazon: 'https://amzn.to/3YvXxxx', heroImage: '/images/hero-sunglasses.png', productImage: '/images/product-sunglasses.png', productName: 'Rectangle Retro Sunglasses for Women', productDesc: 'Small rectangular frame, warm beige acetate, UV400 lens protection, lightweight construction', story: 'Small rectangles — the quiet luxury frame — create an editorial intentionality that overtly trendy shapes never quite achieve. Under $13. The single most impactful accessory addition to any warm-weather look.', tips: [ { label: 'The Shape', text: 'Small rectangular frames read as intentional rather than trendy.' }, { label: 'Color Pairing', text: 'The warm beige frame tone works as a neutral with everything.' }, { label: 'Styling', text: 'Wear perched slightly forward on the nose for the editorial look.' } ] },
+
+  { slug: 'silk-scarf', title: 'The Silk Scarf That Ties Everything Together', category: 'accessories', price: '$14.98', amazon: 'https://amzn.to/4cTRgpC', heroImage: '/images/hero-sunglasses.png', productImage: '/images/product-silk-scarf.png', productName: 'JERLA 100% Mulberry Silk Square Neck Scarf', productDesc: '100% mulberry silk, 35×35 inch square, hand-rolled edges, multiple wearing options', story: 'A silk scarf is the most versatile object in a summer wardrobe. Neck, bag handle, hair — three completely different looks, one piece of silk. JERLA\'s mulberry silk square has the weight and sheen of scarves that cost forty times more.', tips: [ { label: 'Three Ways to Wear', text: 'Knot at the neck, tie on a bag handle, or fold into a hair band.' }, { label: 'Care', text: 'Hand-wash in cold water with gentle silk detergent, or dry-clean.' }, { label: 'The Bag Knot', text: 'Fold into a strip, wrap around bag handle twice, knot loosely. Takes ten seconds.' } ] },
+
+  { slug: 'red-sneakers', title: 'The Red Sneakers You Will Wear Every Single Day', category: 'shoes', price: '$49.90', amazon: 'https://amzn.to/4umYPMI', heroImage: '/images/hero-red-sneakers.png', productImage: '/images/product-red-sneakers.png', productName: 'Lightweight Memory Foam Platform Sneakers', productDesc: 'Platform sole, memory foam insole, canvas upper in bold red, classic white stripe detail', story: 'Red sneakers are the unexpected move that makes the rest of the outfit look like it was planned by a stylist. The platform gives them presence without height. The memory foam means you actually walk in them.', tips: [ { label: 'On Fit', text: 'Run true to size for most, but if you have wide feet size up half.' }, { label: 'The Unexpected Pairing', text: 'Red sneakers with the burgundy Dokotoo two-piece set creates a monochromatic sporty-luxe look.' }, { label: 'Casual to Smart', text: 'Wear with straight-leg black trousers and a white tee for smart casual.' } ] },
+
+  { slug: 'dokotoo-burgundy-set', title: 'The Two-Piece Set That Looks Designer', category: 'dresses', price: '$37.99', amazon: 'https://amzn.to/4cVSjp4', heroImage: '/images/hero-dokotoo-set.png', productImage: '/images/product-dokotoo-set.png', productName: 'Dokotoo 2-Piece Peplum Top and Wide-Leg Pants Set', productDesc: 'Ribbed knit fabric, peplum top with structured hem, wide-leg trousers with elastic waist, deep burgundy', story: 'Head-to-toe deep burgundy is the quiet luxury version of a power move. Dokotoo\'s ribbed two-piece — peplum top, wide-leg trousers — reads designer in every photo and in person.', tips: [ { label: 'On Fit', text: 'The elastic waist on the trousers makes sizing flexible — order your usual size.' }, { label: 'The Tonal Look', text: 'Keep accessories minimal — small gold hoops and a black leather crossbody. Let the colour do all the work.' }, { label: 'Sneaker Styling', text: 'The burgundy set with red sneakers creates a monochromatic sporty-luxe look.' } ] },
+
+  { slug: 'linen-poolside-set', title: 'The Linen Set That Looks Like a Five-Star Holiday', category: 'dresses', price: '$16.99', amazon: 'https://amzn.to/3YvXlp1', heroImage: '/images/hero-linen-poolside.png', productImage: '/images/product-linen-poolside.png', productName: "Women's Batwing Sleeve Linen Cotton Two Piece Set", productDesc: 'Linen-cotton blend, batwing sleeve top, wide-leg trousers, elastic waist, relaxed fit throughout', story: 'The poolside quiet luxury look starts here. Cream linen-cotton, batwing sleeve, wide-leg trousers — the silhouette that reads five-star hotel from across the terrace. Under $17.', tips: [ { label: 'On Fit', text: 'The batwing sleeve is intentionally oversized — size down if you prefer a slightly more fitted look.' }, { label: 'The Complete Look', text: 'Add taupe flat slides, rectangle sunglasses, straw tote with silk scarf knotted on the handle.' }, { label: 'Linen Care', text: 'Machine wash cold on a gentle cycle, reshape while damp and air dry.' } ] },
+
+  { slug: 'flat-slides', title: 'The Flat Slides That Feel Like a Five-Star Holiday', category: 'shoes', price: '$20.99', amazon: 'https://amzn.to/3YvXf1s', heroImage: '/images/hero-flat-slides.png', productImage: '/images/hero-flat-slides.png', productName: 'Open Toe Fish Mouth Flat Slides', productDesc: 'Taupe leather upper, flat footbed, minimalist open-toe silhouette, cushioned insole', story: 'Flat slides with the right proportions and the right color — taupe, always taupe — are the most versatile shoe in a summer wardrobe. Under $21 on Amazon.', tips: [ { label: 'On Sizing', text: 'Size up half if between sizes — the leather softens quickly.' }, { label: 'The Poolside Formula', text: 'Cream linen two-piece set, straw tote, rectangle sunglasses, silk scarf on the bag.' }, { label: 'Beyond the Pool', text: 'The taupe leather reads polished enough for breakfast, market, and casual dinner.' } ] },
+
+  { slug: 'blue-raffia-platforms', title: 'Blue Raffia Platforms That Feel Like Vacation', category: 'shoes', price: '$49.99', amazon: 'https://www.amazon.com/dp/B0F83YMBPH/ref=cm_sw_r_as_gl_api_gl_i_K7YQ0YARJVF9MKBCCED0?linkCode=ml1&tag=aipromtsgen-20', heroImage: '/images/hero-blue-raffia-platforms.jpg', productImage: '/images/product-blue-raffia-platforms.jpg', productName: 'Monrovia Platform Raffia Slides', productDesc: 'Powder blue raffia upper, flatform sole, open-toe silhouette, adjustable ankle strap', story: 'Powder blue raffia on a flatform — the slide that makes any outfit look like it was photographed in Positano. The color reads effortlessly against cream, sand, and warm neutrals.', tips: [ { label: 'On Sizing', text: 'True-to-size for narrow to medium feet; size up half for wider feet.' }, { label: 'Color Pairing', text: 'Powder blue acts like a neutral against cream, sand, and warm taupe.' }, { label: 'From Beach to Bistro', text: 'The flatform makes them dressier than a flat slide — pair with a straw tote and gold hoops.' } ] },
+
+  // ── NEW 10 LOOKS — WEEK 1 ─────────────────────────────────────────────
+
+  { slug: 'bagsmart-puffy-tote', title: "Amazon's #1 Tote That Looks Twice the Price", category: 'bags', price: '$45.99', amazon: 'https://amzn.to/4cYeomR', heroImage: '/images/hero-bagsmart-puffy-tote.jpg', productImage: '/images/product-bagsmart-puffy-tote.jpg', productName: 'BAGSMART Lightweight Puffy Tote Bag', productDesc: 'Quilted puffer material, multiple compartments, adjustable shoulder strap, lightweight construction', story: 'Six thousand reviews and the number one spot in Amazon\'s tote rankings. Quilted texture that photographs like a bag four times the price, compartments for everything, wipes clean in seconds. The bag that goes from gym to office to weekend without asking permission.', tips: [ { label: 'On Size', text: 'Fits a 13" laptop, gym clothes, water bottle, and everything else. Multiple compartments keep it organized.' }, { label: 'Styling', text: 'The quilted texture pairs beautifully with clean, minimal outfits — white linen, cream trousers, simple black.' }, { label: 'Care', text: 'The puffer material wipes clean with a damp cloth. Spot-treat any marks immediately.' } ] },
+
+  { slug: 'inicat-rfid-sling', title: 'The Anti-Theft Bag That Travels Smart', category: 'bags', price: '$34.99', amazon: 'https://amzn.to/4tLgIor', heroImage: '/images/hero-inicat-rfid-sling.jpg', productImage: '/images/product-inicat-rfid-sling.jpg', productName: 'INICAT RFID Blocking Sling Bag', productDesc: 'Vegan leather, RFID blocking technology, anti-theft zipper lock, fanny pack silhouette, hands-free wear', story: 'RFID blocking so no one skims your cards. Anti-theft zipper lock so no one gets into your bag in a crowded street. Vegan leather that looks polished, not practical. Three sustainability certifications. The bag for anyone who travels and refuses to compromise on style.', tips: [ { label: 'Travel Setup', text: 'Cards in the RFID-blocking pocket, passport in the main zip, phone in the front pocket.' }, { label: 'Styling', text: 'Wear crossbody for hands-free days, front-facing in crowded areas.' }, { label: 'Sustainability', text: 'Three certified sustainable features — the rare crossbody that lets you travel responsibly.' } ] },
+
+  { slug: 'befen-leather-crossbody', title: 'Real Leather for Under $30. On Amazon.', category: 'bags', price: '$29.99', amazon: 'https://amzn.to/429bpDl', heroImage: '/images/hero-befen-leather-crossbody.jpg', productImage: '/images/product-befen-leather-crossbody.jpg', productName: 'befen Genuine Leather Crossbody Bag with RFID Blocking', productDesc: 'Genuine cowhide leather, RFID blocking card slots, adjustable strap, multiple color options', story: 'Actual cowhide leather. Not vegan, not pleather — genuine. With a built-in RFID blocking wallet and card slots. Available in cognac, black, tan, and wine. The bag that makes people ask where you got it, then refuse to believe the answer.', tips: [ { label: 'On Leather', text: 'Genuine leather develops a patina over time — it gets better with use. The cognac deepens beautifully.' }, { label: 'RFID Protection', text: 'The built-in RFID blocking card slots protect against contactless card skimming.' }, { label: 'Color Choice', text: 'Cognac is the most versatile — warm enough for cream and beige, rich enough for black and white.' } ] },
+
+  { slug: 'hkcluf-guitar-strap-hobo', title: 'The Guitar Strap Bag Trend, Done Right', category: 'bags', price: '$29.99', amazon: 'https://amzn.to/4el0Ynn', heroImage: '/images/hero-hkcluf-guitar-strap-hobo.jpg', productImage: '/images/product-hkcluf-guitar-strap-hobo.jpg', productName: 'HKCLUF Vegan Leather Hobo Bag with Guitar Strap', productDesc: 'Vegan leather bucket silhouette, includes two straps — regular adjustable and wide woven guitar strap', story: 'The guitar strap bag is the defining bag of 2026. HKCLUF includes two straps in the box: a regular adjustable strap and the wide woven guitar strap. Six thousand reviews agree this is the one.', tips: [ { label: 'Two Straps', text: 'Regular strap for sleek days, guitar strap for when you want the bag to be the statement.' }, { label: 'Styling', text: 'The guitar strap pairs best with relaxed, oversized silhouettes — wide-leg trousers, linen shirts, maxi dresses.' }, { label: 'The Trend', text: 'The guitar strap silhouette is at its peak right now. It will become a classic.' } ] },
+
+  { slug: 'kkxiu-straw-crossbody', title: 'The Summer Bag That Goes From Beach to Dinner', category: 'bags', price: '$32.99', amazon: 'https://amzn.to/49cyZTn', heroImage: '/images/hero-kkxiu-straw-crossbody.jpg', productImage: '/images/product-kkxiu-straw-crossbody.jpg', productName: 'KKXIU Straw Woven Crossbody and Clutch Bag', productDesc: 'Natural woven straw, converts from crossbody to clutch, lightweight, summer-ready silhouette', story: 'Natural straw woven into a shape that works as a crossbody and a clutch. The texture photographs beautifully in every light, the convertible design adapts to the occasion. The bag that feels like something you found at a market in Puglia rather than ordered online.', tips: [ { label: 'Two Ways to Wear', text: 'Crossbody strap for daytime and movement. Remove it for dinner — one bag, two looks.' }, { label: 'Pairing', text: 'Natural straw pairs with white, cream, navy, black, and every pastel.' }, { label: 'Care', text: 'Keep away from water and direct sunlight for extended periods. Spot clean with a dry cloth.' } ] },
+
+  { slug: 'steve-madden-mod-mule', title: 'The Mule That Makes Every Outfit Look Intentional', category: 'shoes', price: '$98.95', amazon: 'https://amzn.to/3QOt9kT', heroImage: '/images/hero-steve-madden-mod-mule.jpg', productImage: '/images/product-steve-madden-mod-mule.jpg', productName: 'Steve Madden Mod Pointed Toe Mule', productDesc: 'Chestnut suede upper, pointed toe silhouette, block heel, slip-on construction', story: 'Chestnut suede and a pointed toe — the combination that makes a basic outfit look like it was styled. The Mod mule works with dresses, trousers, denim, everything. Suede photographs at a completely different level than leather.', tips: [ { label: 'On Fit', text: 'Steve Madden runs true to size. The pointed toe has enough room to be comfortable.' }, { label: 'Suede Care', text: 'Use a suede brush to maintain the texture. Treat with a suede protector spray before first wear.' }, { label: 'Versatility', text: 'Chestnut suede is a warm neutral — pairs with everything from cream linen to dark denim.' } ] },
+
+  { slug: 'sam-edelman-felicia-flat', title: 'The Ballet Flat That Has Always Been Right', category: 'shoes', price: '$119.99', amazon: 'https://amzn.to/4n6LINb', heroImage: '/images/hero-sam-edelman-felicia-flat.jpg', productImage: '/images/product-sam-edelman-felicia-flat.jpg', productName: 'Sam Edelman Womens Felicia Ballet Flat', productDesc: 'Leather upper, pointed toe, cushioned insole, available in multiple colors including dusty rose', story: 'The Felicia has been Sam Edelman\'s bestseller for years because it is genuinely good. Leather upper, cushioned insole, pointed toe that lengthens every silhouette. Ballet flats are the shoe of 2026 and this is the one worth buying.', tips: [ { label: 'On Fit', text: 'Runs true to size. The cushioned insole means these are actually comfortable for all-day wear.' }, { label: 'Color Strategy', text: 'Dusty rose is this season\'s neutral. Black and ivory are the classics that never leave.' }, { label: 'The Ballet Flat Moment', text: 'Works with midi skirts, wide-leg trousers, tailored shorts, and jeans.' } ] },
+
+  { slug: 'grecerelle-maxi-dress', title: 'The $20 Dress 4,000 Women Bought Last Month', category: 'dresses', price: '$19.99', amazon: 'https://amzn.to/4uwroaF', heroImage: '/images/hero-grecerelle-maxi-dress.jpg', productImage: '/images/product-grecerelle-maxi-dress.jpg', productName: 'GRECERELLE Casual Maxi Vacation Dress with Pockets', productDesc: 'Wrinkle-free fabric, round neck, loose fit, side slit, pockets, sizes XXS–4XL', story: 'Wrinkle-free so it packs perfectly. Pockets because they should always be there. Side slit for movement and ease. Loose fit that works on every body. XXS to 4XL. Four thousand women bought this dress last month.', tips: [ { label: 'Pack It', text: 'Wrinkle-free means this comes out of a suitcase looking like it was just steamed.' }, { label: 'Styling', text: 'Add the straw crossbody and gold layered necklace for a complete look under $65 total.' }, { label: 'Size Inclusive', text: 'XXS through 4XL with consistent sizing across the range.' } ] },
+
+  { slug: 'womengifts-necklace-set', title: 'The Necklace Set 9,000 Women Chose Last Month', category: 'accessories', price: '$16.99', amazon: 'https://amzn.to/49pGc2q', heroImage: '/images/hero-womengifts-necklace-set.jpg', productImage: '/images/product-womengifts-necklace-set.jpg', productName: 'WomenGifts Layered Gold Necklaces Set', productDesc: '14K gold plated sterling silver, pre-layered three-chain set, non-tarnish, waterproof', story: 'Three chains. Pre-layered so you put them on as one piece and they look styled from the first second. 14K gold plated on sterling silver — non-tarnish, waterproof. Amazon\'s Overall Pick. Nine thousand women bought this last month.', tips: [ { label: 'Pre-Layered', text: 'No untangling, no figuring out which lengths work together — the layering is done for you.' }, { label: 'Durability', text: 'Non-tarnish and waterproof — wear it to the beach, the shower, everywhere.' }, { label: 'Pairing', text: 'The mix of chunky and dainty chains works with every neckline — V-neck, scoop, collared shirt.' } ] },
+
+  { slug: 'prettygarden-eyelet-maxi', title: 'The Eyelet Dress That Looks Like a Boutique Find', category: 'dresses', price: '$64.99', amazon: 'https://amzn.to/3OJOprr', heroImage: '/images/hero-prettygarden-eyelet-maxi.jpg', productImage: '/images/product-prettygarden-eyelet-maxi.jpg', productName: 'PRETTYGARDEN Eyelet Maxi Beach Vacation Dress', productDesc: 'Hollow-out eyelet fabric, V-neck, short sleeve, A-line silhouette, flowy maxi length', story: 'The eyelet fabric catches light in photographs in a way that makes the whole thing look like it came from a boutique in Capri. V-neck, A-line, flowy maxi length. The dress that makes people ask where it\'s from, then not believe the answer.', tips: [ { label: 'The Eyelet Effect', text: 'Eyelet fabric photographs with a dimensional quality that flat fabrics cannot match.' }, { label: 'Styling', text: 'Keep accessories minimal — gold layered necklace, straw crossbody, flat sandals. Let the fabric do the work.' }, { label: 'Occasions', text: 'Beach to brunch to dinner — the A-line silhouette reads appropriate for everything warm-weather.' } ] },
+
+  // ── PENDING 3 LOOKS ───────────────────────────────────────────────────
+
+  { slug: 'beige-linen-set', title: 'The Linen Set for Every Summer Plan', category: 'dresses', price: '$34.99', amazon: 'https://amzn.to/42PrldW', heroImage: '/images/hero-beige-linen-set.jpg', productImage: '/images/product-beige-linen-set.jpg', productName: 'Two Piece Sets for Women — Wide Leg Crop Pants Lounge Set', productDesc: 'Oversized crop top and wide-leg pants, summer lounge and airport-ready, beige linen blend', story: 'The two-piece that works at the airport, at the beach, at brunch — at every occasion that requires looking effortless. Wide-leg crop pants and an oversized top in warm beige. The silhouette that photographs like you have a stylist.', tips: [ { label: 'On Fit', text: 'The oversized top and wide-leg pants are intentionally relaxed — order your usual size.' }, { label: 'Styling', text: 'Pair with flat slides and the straw crossbody. Gold layered necklace completes it.' }, { label: 'Travel', text: 'The ultimate airport outfit — comfortable enough for a long flight, polished enough to arrive looking put together.' } ] },
+
+  { slug: 'beige-blazer', title: 'The Blazer That Makes Everything Look Expensive', category: 'dresses', price: '$59.99', amazon: 'https://amzn.to/4tRHM5F', heroImage: '/images/hero-beige-blazer.jpg', productImage: '/images/product-beige-blazer.jpg', productName: 'Long Sleeve Lapel Open Front Suit Blazer', productDesc: 'Structured lapel, open front, long sleeve, beige neutral colorway, tailored silhouette', story: 'A beige blazer is the single most versatile piece in a quiet luxury wardrobe. Over a slip dress, over jeans and a white shirt, over a swimsuit at the beach club — it elevates everything underneath it.', tips: [ { label: 'The Layer', text: 'Throw over the GRECERELLE maxi dress for an instant outfit upgrade. Over white linen trousers for office-to-dinner.' }, { label: 'Styling', text: 'The open-front silhouette means it works over everything — no buttoning required. Sleeves pushed up is the move.' }, { label: 'Investment Piece', text: 'A beige blazer earns its place by working with every other piece. The one buy that multiplies every outfit.' } ] },
+
+  { slug: 'satin-lace-shorts', title: 'Satin Lace Shorts That Look Like Lingerie Dressing', category: 'dresses', price: '$19.98', amazon: 'https://amzn.to/4tSg8p8', heroImage: '/images/hero-satin-lace-shorts.jpg', productImage: '/images/product-satin-lace-shorts.jpg', productName: 'Satin Silk Lace Shorts Low Rise Micro', productDesc: 'Satin finish, lace trim detail, low rise, micro length, lingerie-inspired aesthetic', story: 'The lingerie dressing trend translated into something you actually wear out. Satin finish with lace trim, low rise. Pair with an oversized blazer or a tailored white shirt for the quiet luxury take on the trend.', tips: [ { label: 'How to Style', text: 'The key is contrast — pair with something structured and oversized on top. The beige blazer over these shorts is the entire look.' }, { label: 'The Trend', text: 'Lingerie dressing is the quiet luxury take on sensuality — silk, lace, slip fabrics worn as outerwear.' }, { label: 'Occasions', text: 'Evening dinner, rooftop drinks, anything where the dress code is undefined but the aesthetic matters.' } ] }
+
 ];
 
 export const CATEGORIES = ['all', 'bags', 'shoes', 'dresses', 'accessories'];

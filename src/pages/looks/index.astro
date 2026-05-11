@@ -11,145 +11,28 @@ const base = import.meta.env.BASE_URL;
 >
 
 <style>
-  .catalog-hero { 
-    padding: 48px 0 32px; 
-    text-align: center;
-  }
-  .catalog-eyebrow { 
-    font-size: 11px; 
-    letter-spacing: 4px; 
-    text-transform: uppercase; 
-    color: #8a7464; 
-    margin-bottom: 12px; 
-  }
-  .catalog-title { 
-    font-family: 'Fraunces', serif; 
-    font-size: clamp(36px, 6vw, 58px); 
-    font-weight: 400; 
-    letter-spacing: -1.8px; 
-    line-height: 1.05; 
-    color: #2a2420;
-  }
-  .filter-bar { 
-    display: flex; 
-    gap: 10px; 
-    padding: 28px 0; 
-    border-bottom: 1px solid rgba(42,36,32,0.12); 
-    flex-wrap: wrap; 
-    justify-content: center;
-  }
-  .filter-btn { 
-    padding: 9px 22px; 
-    border: 1px solid rgba(42,36,32,0.2); 
-    background: transparent; 
-    color: #5c4a3a; 
-    font-family: 'Inter', sans-serif; 
-    font-size: 11px; 
-    letter-spacing: 1.6px; 
-    text-transform: uppercase; 
-    cursor: pointer; 
-    transition: all 0.25s; 
-    border-radius: 4px; 
-  }
-  .filter-btn:hover { 
-    border-color: #2a2420; 
-    color: #2a2420; 
-  }
-  .filter-btn.active { 
-    background: #2a2420; 
-    color: #faf6ee; 
-    border-color: #2a2420; 
-  }
-
-  .looks-grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-    gap: 36px; 
-    padding: 40px 0 100px; 
-  }
-
-  .look-card { 
-    color: inherit; 
-    display: block; 
-    text-decoration: none;
-  }
-  .look-card-image { 
-    aspect-ratio: 4/5; 
-    overflow: hidden; 
-    border-radius: 6px; 
-    margin-bottom: 16px; 
-    background: #f8f4ee; 
-    position: relative;
-  }
-  .look-card-image img { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    transition: transform 0.7s ease; 
-  }
-  .look-card:hover .look-card-image img { 
-    transform: scale(1.04); 
-  }
-
-  .look-card-meta { 
-    padding: 0 4px; 
-  }
-  .look-card-category { 
-    font-size: 10px; 
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    color: #8a7464; 
-    margin-bottom: 6px; 
-  }
-  .look-card-title { 
-    font-family: 'Fraunces', serif; 
-    font-size: 17px; 
-    line-height: 1.3; 
-    color: #2a2420; 
-    margin-bottom: 6px; 
-  }
-  .look-card-price { 
-    font-size: 14.5px; 
-    color: #5c4a3a; 
-    margin-bottom: 12px; 
-  }
-  .look-card-products { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 6px; 
-    margin-bottom: 16px; 
-  }
-  .look-card-products span { 
-    font-size: 10px; 
-    padding: 3px 10px; 
-    background: #f5f0e8; 
-    border-radius: 20px; 
-    color: #6b5a4a; 
-  }
-
-  .look-card-amazon { 
-    display: block; 
-    padding: 12px 20px; 
-    background: #2a2420; 
-    color: #faf6ee; 
-    text-align: center; 
-    font-size: 10.5px; 
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    border-radius: 4px; 
-    transition: all 0.2s; 
-  }
-  .look-card-amazon:hover { 
-    background: #5c4a3a; 
-  }
-
-  @media (max-width: 640px) { 
-    .looks-grid { 
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 24px; 
-    }
-    .filter-bar { gap: 8px; }
-  }
+  .catalog-hero { padding: 48px 0 32px; text-align: center; }
+  .catalog-eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #8a7464; margin-bottom: 12px; }
+  .catalog-title { font-family: 'Fraunces', serif; font-size: clamp(36px, 6vw, 58px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.05; color: #2a2420; }
+  .filter-bar { display: flex; gap: 10px; padding: 28px 0; border-bottom: 1px solid rgba(42,36,32,0.12); flex-wrap: wrap; justify-content: center; }
+  .filter-btn { padding: 9px 22px; border: 1px solid rgba(42,36,32,0.2); background: transparent; color: #5c4a3a; font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; cursor: pointer; transition: all 0.25s; border-radius: 4px; }
+  .filter-btn:hover { border-color: #2a2420; color: #2a2420; }
+  .filter-btn.active { background: #2a2420; color: #faf6ee; border-color: #2a2420; }
+  .looks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 36px; padding: 40px 0 100px; }
+  .look-card { color: inherit; display: block; text-decoration: none; }
+  .look-card[data-cat].hidden { display: none; }
+  .look-card-image { aspect-ratio: 4/5; overflow: hidden; border-radius: 6px; margin-bottom: 16px; background: #f8f4ee; position: relative; display: block; }
+  .look-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+  .look-card-image:hover img { transform: scale(1.04); }
+  .look-card-meta { padding: 0 4px; }
+  .look-card-category { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #8a7464; margin-bottom: 6px; }
+  .look-card-title { font-family: 'Fraunces', serif; font-size: 17px; line-height: 1.3; color: #2a2420; margin-bottom: 6px; display: block; text-decoration: none; }
+  .look-card-title:hover { color: #5c4a3a; }
+  .look-card-price { font-size: 14.5px; color: #5c4a3a; margin-bottom: 12px; }
+  .look-card-amazon { display: block; padding: 12px 20px; background: #2a2420; color: #faf6ee; text-align: center; font-size: 10.5px; letter-spacing: 2px; text-transform: uppercase; border-radius: 4px; transition: all 0.2s; text-decoration: none; }
+  .look-card-amazon:hover { background: #5c4a3a; }
+  .catalog-count { font-size: 12px; color: #8a7464; align-self: center; margin-left: auto; }
+  @media (max-width: 640px) { .looks-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; } .filter-bar { gap: 8px; } }
 </style>
 
 <div class="container">
@@ -160,9 +43,9 @@ const base = import.meta.env.BASE_URL;
 
   <div class="filter-bar">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="sets">Linen Sets</button>
     <button class="filter-btn" data-filter="bags">Bags</button>
     <button class="filter-btn" data-filter="shoes">Shoes</button>
+    <button class="filter-btn" data-filter="dresses">Dresses</button>
     <button class="filter-btn" data-filter="accessories">Accessories</button>
     <span class="catalog-count" id="count">{LOOKS.length} looks</span>
   </div>
@@ -170,34 +53,14 @@ const base = import.meta.env.BASE_URL;
   <div class="looks-grid" id="grid">
     {LOOKS.map(look => (
       <div class="look-card" data-cat={look.category}>
-        <a href={look.slug ? `/looks/${look.slug}` : '#'} class="look-card-image">
-          <img 
-            src={`${base}${(look.productImage || look.heroImage).replace(/^\//, '')}`} 
-            alt={look.title} 
-            loading="lazy"
-          >
+        <a href={look.amazon} class="look-card-image" target="_blank" rel="nofollow sponsored">
+          <img src={`${base}${look.heroImage.replace(/^\//, '')}`} alt={look.title} loading="lazy">
         </a>
-        
         <div class="look-card-meta">
           <p class="look-card-category">{look.category}</p>
-          
-          <a href={look.slug ? `/looks/${look.slug}` : '#'} class="look-card-title">
-            {look.title}
-          </a>
-
+          <a href={look.amazon} class="look-card-title" target="_blank" rel="nofollow sponsored">{look.title}</a>
           <p class="look-card-price">{look.price}</p>
-
-          {look.products && (
-            <div class="look-card-products">
-              {look.products.map(product => (
-                <span>{product}</span>
-              ))}
-            </div>
-          )}
-
-          <a href={look.amazon} class="look-card-amazon" target="_blank" rel="nofollow sponsored">
-            Shop on Amazon →
-          </a>
+          <a href={look.amazon} class="look-card-amazon" target="_blank" rel="nofollow sponsored">Shop on Amazon →</a>
         </div>
       </div>
     ))}
@@ -211,29 +74,22 @@ const base = import.meta.env.BASE_URL;
 
   function setFilter(f) {
     btns.forEach(b => b.classList.toggle('active', b.dataset.filter === f));
-    
     let visible = 0;
     cards.forEach(c => {
       const show = f === 'all' || c.dataset.cat === f;
       c.classList.toggle('hidden', !show);
       if (show) visible++;
     });
-    
     countEl.textContent = `${visible} look${visible !== 1 ? 's' : ''}`;
   }
 
-  // Initial filter
   const urlCat = new URLSearchParams(window.location.search).get('cat') || 'all';
   setFilter(urlCat);
 
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       const f = btn.dataset.filter;
-      const newUrl = f === 'all' 
-        ? window.location.pathname 
-        : `?cat=${f}`;
-      
-      history.replaceState({}, '', newUrl);
+      history.replaceState({}, '', f === 'all' ? window.location.pathname : `?cat=${f}`);
       setFilter(f);
     });
   });
